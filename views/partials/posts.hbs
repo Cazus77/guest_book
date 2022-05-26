@@ -1,0 +1,10 @@
+<h2>Отзывы</h2>
+{{#if posts.length}}
+    <ul>
+        {{#each posts}}
+            <li><p>{{text}}</p><span>{{author}}</span><span>{{createData}}</span></li>
+        {{/each}}
+    </ul>
+{{else}}
+    <p>Нет отзывов</p>
+{{/if}}
